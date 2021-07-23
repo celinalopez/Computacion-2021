@@ -1,0 +1,4 @@
+Consigna:
+Construir los archivos repository.py, mail.py, persona.py de manera que pase el 100% de los tests.
+La aplicación simula una base de datos que tiene 2 tablas, una tabla persona y una tabla mail que serán representados por diccionarios dentro del repositorio.
+Tener en cuenta que el "id" de cada tabla es autoincremental por lo cual se espera que el agregado de un registro genere una clave numérica única cada vez que se agrega un objeto al repositorio; no está permitido modificar el archivo test.py, tampoco el archivo app.py
