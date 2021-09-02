@@ -14,6 +14,8 @@ class TestSudoku(unittest.TestCase):
             self.assertEqual(len(sudoku_obj.initial_board[col]), 9)
             self.assertEqual(len(sudoku_obj.user_board[col]), 9)
 
+#   validar que el value este entre 1-9
+
     def test_validate_numbers_OK(self):
         sudoku_obj = Sudoku()  # Creo un objeto de la clase sudoku
         self.assertTrue(sudoku_obj.validate_numbers(2, 3, 5))
@@ -32,6 +34,8 @@ class TestSudoku(unittest.TestCase):
         sudoku_obj = Sudoku()  # Creo un objeto de la clase sudoku
         self.assertFalse(sudoku_obj.validate_numbers(5, 5, 0))
         self.assertFalse(sudoku_obj.validate_numbers(5, 5, 10))
+
+#   ---------------------------------------------------
 
     def test_verify_number_is_not_initials_OK(self):
         sudoku_obj = Sudoku()
