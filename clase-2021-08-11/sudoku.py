@@ -40,14 +40,26 @@ class Sudoku():
     def validate_col(self, col, value):
         for row in range(9):
             if (
-                    self.initial_board[row][col-1] == value or
-                    self.user_board[row][col-1] == value
+                    self.initial_board[row][col - 1] == value or
+                    self.user_board[row][col - 1] == value
             ):
                 return False
         return True
 
     def validate_region(self, row, col, value):
         return True
+
+    def fin_juego(self, row, col):
+        suma_row = 0
+        suma_col = 0
+        for row in range(9):
+            suma_col += self.user_board[row][col - 1]
+        for col in range(9):
+            suma_row = self.user_board[row - 1][col]
+        if (
+                suma_row and suma_col == 45
+        ):
+            print("Fin!!!")
 
 
 def program():
