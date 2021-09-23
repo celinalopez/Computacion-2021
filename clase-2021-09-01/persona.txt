@@ -1,0 +1,3 @@
+1;;José;;Alvarez
+2;;Juan;;Garcia
+3;;Juana;;Gomez
